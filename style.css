@@ -1,0 +1,119 @@
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.location-suggestions {
+  margin-bottom: 20px;
+}
+
+.location-suggestions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.location-suggestions td {
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  color: #2c3e50;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.location-suggestions td:hover {
+  background: rgba(110, 142, 251, 0.2);
+}
+
+input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+input:focus {
+  border-color: #6e8efb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(110, 142, 251, 0.2);
+}
+
+button {
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(110, 142, 251, 0.4);
+}
+
+.weather-info {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.weather-info h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.weather-info img {
+  width: 120px;
+  height: 120px;
+  margin: 10px 0;
+}
+
+.weather-info p {
+  color: #34495e;
+  font-size: 1.1em;
+  margin: 12px 0;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+}
