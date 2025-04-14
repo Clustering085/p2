@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <h1>날씨 앱</h1>
+    <div class="search-box">
+      <input type="text" id="location" placeholder="도시 이름을 입력하세요">
+      <button onclick="getWeather()">검색</button>
+    </div>
+    <div class="location-suggestions">
+      <table>
+        <tr>
+          <td onclick="setLocation('Seoul')">서울</td>
+          <td onclick="setLocation('Busan')">부산</td>
+          <td onclick="setLocation('Incheon')">인천</td>
+        </tr>
+        <tr>
+          <td onclick="setLocation('Daegu')">대구</td>
+          <td onclick="setLocation('Daejeon')">대전</td>
+          <td onclick="setLocation('Gwangju')">광주</td>
+        </tr>
+      </table>
+    </div>
+    <div id="weather-info" class="weather-info">
+      <!-- Weather information will be displayed here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
